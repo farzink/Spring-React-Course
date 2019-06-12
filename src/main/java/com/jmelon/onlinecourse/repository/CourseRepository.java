@@ -11,4 +11,6 @@ import java.util.Collection;
 public interface CourseRepository extends Neo4jRepository<Course, Long> {
     /*@Query("MATCH (t:Course) return t")
     Collection<Course> getAll();*/
+
+
 }
