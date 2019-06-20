@@ -59,4 +59,9 @@ public class CoursesController {
     public void create(@RequestBody Course model) {
         courseService.create(model);
     }
+
+    @PostMapping(path = "/{id}",consumes = "application/json", produces = "application/json")
+    public void addCourseRegistration(@PathVariable Long id) {
+        this.courseService.create();
+    }
 }
