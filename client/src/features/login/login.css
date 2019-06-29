@@ -1,0 +1,206 @@
+:root {
+    --primary-color: rgba(87, 184, 70, 0.8);
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  #root {
+    height: 100%;
+  }
+  
+  main {
+    height: 100%;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #212529;
+  }
+  
+  input,
+  button {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .auth_form {
+    width: 100%;
+    max-width: 960px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 24px;
+  }
+  
+  @media (max-width: 350px) {
+    .auth_form {
+      margin: 0;
+    }
+  }
+  
+  .auth_form--container {
+    padding: 177px 130px 33px 95px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  @media (max-width: 768px) {
+    .auth_form--container {
+      padding: 77px 30px 30px 30px;
+    }
+  }
+  
+  .auth_form--image img {
+    max-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  
+  @media (max-width: 768px) {
+    .auth_form--image {
+      display: none;
+    }
+  }
+  
+  .auth_form--inputs {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 290px;
+            flex: 0 0 290px;
+  }
+  
+  @media (max-width: 768px) {
+    .auth_form--inputs {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+    }
+  }
+  
+  .auth_form--inputs .title {
+    font-size: 2rem;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 54px;
+  }
+  
+  .auth_form--inputs .form_inputs {
+    width: 100%;
+  }
+  
+  .auth_form--inputs .form_inputs .input {
+    position: relative;
+    margin-bottom: 8px;
+  }
+  
+  .auth_form--inputs .form_inputs .input i {
+    position: absolute;
+    left: 32px;
+    top: 18px;
+    color: #666666;
+    -webkit-transition: color, left 500ms;
+    transition: color, left 500ms;
+  }
+  
+  .auth_form--inputs .form_inputs .input input {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 68px;
+    border: 0;
+    outline: none;
+  }
+  
+  .auth_form--inputs .form_inputs .input input:focus + i {
+    color: var(--primary-color);
+    left: 24px;
+  }
+  
+  .auth_form--inputs .link_button {
+    border: 0;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    color: #666666;
+    font-size: 13px;
+    margin: 8px 0;
+    -webkit-transition: color 250ms;
+    transition: color 250ms;
+    text-decoration: none;
+  }
+  
+  .auth_form--inputs .link_button:hover {
+    color: var(--primary-color);
+  }
+  
+  .auth_form--inputs .form_actions {
+    width: 100%;
+    padding: 18px 0;
+  }
+  
+  .auth_form--inputs .form_actions .primary_button {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    display: block;
+    width: 100%;
+    background: var(--primary-color);
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+    -webkit-transition: background 500ms;
+    transition: background 500ms;
+  }
+  
+  .auth_form--inputs .form_actions .primary_button:hover {
+    background: #333;
+  }
+  
+  .auth_form--inputs .form_link {
+    padding-top: 100px;
+    text-align: center;
+  }
+  /*# sourceMappingURL=main.css.map */
+  

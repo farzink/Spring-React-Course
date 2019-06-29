@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "firstName": "Justus",
+            "lastname": "Jonas",
+            "birthday": "1982-01-04",
+            "achievedCertificates": [
+                1
+            ],
+            "visitedCourses": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "id": 2,
+            "firstName": "Peter",
+            "lastname": "Shaw",
+            "birthday": "1982-06-07",
+            "achievedCertificates": [],
+            "visitedCourses": []
+        },
+        {
+            "id": 3,
+            "firstName": "Bob",
+            "lastname": "Andrews",
+            "birthday": "1983-02-12",
+            "achievedCertificates": [
+                1
+            ],
+            "visitedCourses": [
+                1,
+                2
+            ]
+        }
+    ]
+}

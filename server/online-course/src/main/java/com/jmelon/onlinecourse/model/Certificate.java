@@ -6,7 +6,19 @@ import org.neo4j.ogm.annotation.NodeEntity;
 @NodeEntity
 public class Certificate {
     @Id
-    long id;
+    Long id;
     String name;
     int durationInMinutes;
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getDurationInMinutes() {
+        return durationInMinutes;
+    }
 }

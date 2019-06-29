@@ -3,17 +3,17 @@ package com.jmelon.onlinecourse;
 import com.jmelon.onlinecourse.Util.SimpleStorageManager;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class OnlineCourseApplication {
-    public String getGreeting() {
-        return "Hello world.";
-    }
 
     public static void main(String[] args) {
-        //System.out.println(new App().getGreeting());
+        ConfigurableApplicationContext context = SpringApplication.run(OnlineCourseApplication.class);
+        init(context);
+    }
 
-        var context = SpringApplication.run(OnlineCourseApplication.class);
+    static void init(ConfigurableApplicationContext context) {
         SimpleStorageManager stm = context.getBean(SimpleStorageManager.class);
         stm.init();
     }

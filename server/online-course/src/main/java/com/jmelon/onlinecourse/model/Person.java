@@ -1,5 +1,6 @@
 package com.jmelon.onlinecourse.model;
 
+import com.opencsv.bean.CsvBindByPosition;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
@@ -11,25 +12,28 @@ import java.util.List;
 public class Person {
     @Id
     @GeneratedValue
+    @CsvBindByPosition(position = 0)
     private Long id;
+    @CsvBindByPosition(position = 1)
     private String firstname;
+    @CsvBindByPosition(position = 2)
     private String lastname;
+    @CsvBindByPosition(position = 3)
     private String birthday;
-    private List<Long> achievedCertificates;
-    private List<Long> visitedCourses;
+    @CsvBindByPosition(position = 4)
+    private List<Long> achievedCertificates = new ArrayList<>();
+    @CsvBindByPosition(position = 5)
+    private List<Long> visitedCourses = new ArrayList<>();
+    @CsvBindByPosition(position = 6)
+    private boolean isHidden = false;
+
+    public boolean getIsHidden() {
+        return isHidden;
+    }
 
     public Person() {
         this.achievedCertificates = new ArrayList<>();
         this.visitedCourses = new ArrayList<>();
-    }
-
-    public Person(Long id, String firstname, String lastname, String birthday, List<Long> achievedCertificates, List<Long> visitedCourses) {
-        this.id = id;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.birthday = birthday;
-        this.achievedCertificates = achievedCertificates;
-        this.visitedCourses = visitedCourses;
     }
 
     public Person(String firstname, String lastname, String birthday) {

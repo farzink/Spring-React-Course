@@ -1,0 +1,197 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Math 1",
+            "description": "Multiplication tables up to twenty",
+            "durationInMinutes": 15,
+            "certificate": null,
+            "priceInEuro": 1.99,
+            "since": "2018-09-01",
+            "prerequisiteCertificates": [],
+            "prerequisiteCourses": [],
+            "tags": [
+                "MATH",
+                "BASIC",
+                "USK0"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Math 2",
+            "description": "Addition up to twenty",
+            "durationInMinutes": 10,
+            "certificate": null,
+            "priceInEuro": 0.99,
+            "since": "2018-09-01",
+            "prerequisiteCertificates": [],
+            "prerequisiteCourses": [],
+            "tags": [
+                "MATH",
+                "BASIC",
+                "USK0"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Math 3",
+            "description": "Multiplying and Addition up to twenty",
+            "durationInMinutes": 15,
+            "certificate": 1,
+            "priceInEuro": 1,
+            "since": "2018-09-01",
+            "prerequisiteCertificates": [],
+            "prerequisiteCourses": [
+                1,
+                2
+            ],
+            "tags": [
+                "MATH",
+                "MEDIUM",
+                "USK4"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Math 4",
+            "description": "Multiplying and Addition up to 100",
+            "durationInMinutes": 60,
+            "certificate": null,
+            "priceInEuro": 1,
+            "since": "2018-09-12",
+            "prerequisiteCertificates": [
+                1
+            ],
+            "prerequisiteCourses": [],
+            "tags": [
+                "MATH",
+                "MEDIUM",
+                "USK6"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Math 5",
+            "description": "Multiplying and Addition up to 1000",
+            "durationInMinutes": 60,
+            "certificate": 2,
+            "priceInEuro": 5.20,
+            "since": "2018-09-12",
+            "prerequisiteCertificates": [],
+            "prerequisiteCourses": [
+                4
+            ],
+            "tags": [
+                "MATH",
+                "MEDIUM",
+                "USK6"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Letters",
+            "description": "Learning letters from A to Z",
+            "durationInMinutes": 60,
+            "certificate": 3,
+            "priceInEuro": 4,
+            "since": "2018-09-12",
+            "prerequisiteCertificates": [],
+            "prerequisiteCourses": [
+                4
+            ],
+            "tags": [
+                "LANGUAGE",
+                "BASIC",
+                "USK6"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Writing 1",
+            "description": "Writing essays in German",
+            "durationInMinutes": 500,
+            "certificate": null,
+            "priceInEuro": 40.99,
+            "since": "2018-09-15",
+            "prerequisiteCertificates": [
+                4
+            ],
+            "prerequisiteCourses": [],
+            "tags": [
+                "LANGUAGE",
+                "BASIC",
+                "USK6"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Writing 2",
+            "description": "Writing long essays in German",
+            "durationInMinutes": 500,
+            "certificate": null,
+            "priceInEuro": 20.99,
+            "since": "2018-09-18",
+            "prerequisiteCertificates": [],
+            "prerequisiteCourses": [
+                7
+            ],
+            "tags": [
+                "LANGUAGE",
+                "MEDIUM",
+                "USK6"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Mastering essays",
+            "description": "...",
+            "durationInMinutes": 500,
+            "certificate": 3,
+            "priceInEuro": 20.99,
+            "since": "2018-09-18",
+            "prerequisiteCertificates": [],
+            "prerequisiteCourses": [
+                8
+            ],
+            "tags": [
+                "LANGUAGE",
+                "MEDIUM",
+                "USK12"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Essay Express",
+            "description": "...",
+            "durationInMinutes": 100,
+            "certificate": 3,
+            "priceInEuro": 199.99,
+            "since": "2018-09-18",
+            "prerequisiteCertificates": [],
+            "prerequisiteCourses": [],
+            "tags": [
+                "LANGUAGE",
+                "MEDIUM",
+                "USK16"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Becoming a real writer",
+            "description": "...",
+            "durationInMinutes": 100,
+            "certificate": 4,
+            "priceInEuro": 10.99,
+            "since": "2018-12-31",
+            "prerequisiteCertificates": [
+                3
+            ],
+            "prerequisiteCourses": [],
+            "tags": [
+                "LANGUAGE",
+                "ADVANCED",
+                "USK18"
+            ]
+        }
+    ]    
+}

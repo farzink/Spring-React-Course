@@ -31,14 +31,14 @@ public class AuthUserService {
     private SimpleStorageManager simpleStorageManager;
 
     @Autowired
-    private PersonService userService;
+    private PersonService personService;
 
     public boolean register(AuthUserViewModel model) {
         try {
             if (simpleStorageManager.userExists(fromAuthUserViewModel(model)))
                 throw new Exception();
             Person person = new Person(model.firstname, model.lastname, model.birthday);
-            userService.create(person);
+            personService.create(person);
             var authUser = fromAuthUserViewModel(model);
             authUser.setId(person.getId());
             simpleStorageManager.addUser(authUser);
@@ -129,6 +129,8 @@ public class AuthUserService {
             return null;
         }
     }
+
+
 
     AuthUser fromAuthUserViewModel(AuthUserViewModel model) {
         return new AuthUser(0, model.email, model.password, "");

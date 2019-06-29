@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "courseId": 11,
+            "personId": 1,
+            "progress": 73
+        },
+        {
+            "courseId": 2,
+            "personId": 1,
+            "progress": 20
+        },
+        {
+            "courseId": 3,
+            "personId": 1,
+            "progress": 0
+        },
+        {
+            "courseId": 4,
+            "personId": 1,
+            "progress": 100
+        },
+        {
+            "courseId": 8,
+            "personId": 1,
+            "progress": 100
+        }
+
+    ]
+}

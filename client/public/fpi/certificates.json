@@ -1,0 +1,21 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Basic Math",
+            "durationInMinutes": 15
+        },
+        {
+            "id": 2,
+            "name": "Math 1000"
+        },
+        {
+            "id": 3,
+            "name": "Essay-Master"
+        },
+        {
+            "id": 4,
+            "name": "Real-Writer"
+        }
+    ]
+}

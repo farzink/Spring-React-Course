@@ -1,7 +1,5 @@
 package com.jmelon.onlinecourse.model;
 
-import org.neo4j.ogm.annotation.GeneratedValue;
-import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 
@@ -15,30 +13,15 @@ public class Course {
     String name;
     String description;
     int durationInMinutes;
-    Certificate certificate;
+    Long certificate;
     double priceInEuro;
     String since;
-    List<Certificate> prerequisiteCertificates;
-    List<Course> prerequisiteCourses;
-    List<String> tags;
-    public Course() {
-        this.prerequisiteCertificates= new ArrayList<>();
-        this.prerequisiteCourses = new ArrayList<>();
-        this.tags = new ArrayList<>();
-    }
+    List<Long> prerequisiteCertificates = new ArrayList<>();
+    List<Long> prerequisiteCourses = new ArrayList<>();
+    List<String> tags = new ArrayList<>();
 
-    public Course(Long id, String name, String description, int durationInMinutes, Certificate certificate, double priceInEuro, String since, List<Certificate> prerequisiteCertificates, List<Course> prerequisiteCourses, List<String> tags) {
-        this.id = id;
-        this.name = name;
-        this.description = description;
-        this.durationInMinutes = durationInMinutes;
-        this.certificate = certificate;
-        this.priceInEuro = priceInEuro;
-        this.since = since;
-        this.prerequisiteCertificates = prerequisiteCertificates;
-        this.prerequisiteCourses = prerequisiteCourses;
-        this.tags = tags;
-    }
+
+
 
     public Long getId() {
         return id;
@@ -56,7 +39,7 @@ public class Course {
         return durationInMinutes;
     }
 
-    public Certificate getCertificate() {
+    public Long getCertificate() {
         return certificate;
     }
 
@@ -68,11 +51,11 @@ public class Course {
         return since;
     }
 
-    public List<Certificate> getPrerequisiteCertificates() {
+    public List<Long> getPrerequisiteCertificates() {
         return prerequisiteCertificates;
     }
 
-    public List<Course> getPrerequisiteCourses() {
+    public List<Long> getPrerequisiteCourses() {
         return prerequisiteCourses;
     }
 

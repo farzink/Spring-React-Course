@@ -28,8 +28,12 @@ public interface CourseRepository extends Neo4jRepository<Course, Long> {
     @Query("MATCH (p:Person)-[e:ENROLLED]->(c:Course) where id(p) = {personId} AND id(c) = {courseId} delete e")
     void leaveByCourseAndPersonId(Long personId, Long courseId);
 
-    @Query("MATCH (p:Person)-[e:ENROLLED]->(c:Course) WHERE id(p) = {personId} AND id(c) = {courseId}" +
+    @Query("MATCH (p:Person)-[e:ENROLLED]->(c:Course) WHERE id(p) = {personId} AND id(c) = {courseId} " +
             "return c as course, head(collect(e)).enrolmentDate as enrolmentDate, head(collect(e)).progress as progress")
     EnrolledCourseInfo getEnrolledCourseInfoByPersonId(Long personId, Long courseId);
 
+
+    @Query("MATCH (p:Person)-[e:ENROLLED]->(c:Course) WHERE id(p) = {personId} AND id(c) = {courseId} SET e.progress = {progress} " +
+            " return p as user, collect(e), c as course;")
+    Enrolment makeProgress(Long personId, Long courseId, int progress);
 }
